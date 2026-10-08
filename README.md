@@ -4,20 +4,17 @@ A complete, small top-down Unity game. Recover three golden runes in a guarded v
 
 ## Play
 
-A standalone macOS application is also available at **Builds/DungeonEscape.app**.
-
 1. Open this project in **Unity 6000.5.9f1** (the project's existing version).
 2. Open **Assets/DungeonEscape/Scenes/DungeonEscape.unity**.
 3. Press **Play**, then **Enter the Dungeon**.
 
-The original `Assets/Scenes/SampleScene.unity` and its imported sprites remain intact. The new game scene is the enabled build scene.
 
 | Action | Keyboard | Controller |
 | --- | --- | --- |
-| Move | WASD or arrow keys | Left stick or D-pad |
-| Dash | Space or left Shift | South button (Xbox A / PlayStation Cross), or right shoulder |
-| Pause/resume | Escape | Menu / Options / Start |
-| Menu navigation | Mouse, or arrows and Enter | D-pad and south button |
+| Move | WASD or arrow keys |
+| Dash | Space or left Shift |
+| Pause/resume | Escape |
+| Menu navigation | Mouse, or arrows and Enter |
 
 The dash lasts 0.18 seconds and recharges in 1.1 seconds. During the dash, hazards cannot hurt you. After taking damage, you receive 1.3 seconds of protection. Raised silver spikes are dangerous; lowered blue spikes are safe. Coral flasks restore one life point and remain available if life is full. The eastern gate opens after all three runes are collected.
 
@@ -44,10 +41,8 @@ Made by MK. Helped by OpenAI Codex.
 - Character: **Sogomn**, [Animated character](https://opengameart.org/content/animated-character), [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 - Dungeon: **Michele "Buch" Bucelli**, [Top down dungeon tileset](https://opengameart.org/content/top-down-dungeon-tileset), [artist profile](https://opengameart.org/users/buch), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Asset sponsor: **Abram Connelly**.
 - Original source PNGs are preserved in `Assets/DungeonEscape/Art/Imported`. Frames and tiles are sliced in Unity; selected dungeon tiles are imported at the map scale, and the floor is tinted darker for readability. The character has four directional walk cycles.
-- Supplemental rune, sentry, spike, flask, torch, gate and particle icons were made for this project with Codex help. Sound effects are synthesized in code.
+- Sound effects are synthesized in code.
 - Unity supplies the engine, Input System, Tilemap, UI, and built-in LegacyRuntime font.
-
-The pre-existing `Assets/Sprites` resources remain unused by this game; their source was not provided.
 
 ## Editing and building
 
@@ -66,4 +61,4 @@ The pre-existing `Assets/Sprites` resources remain unused by this game; their so
 Unity -batchmode -projectPath /path/to/temporary/project -executeMethod DungeonEscape.Editor.DungeonValidation.Run -logFile /tmp/dungeon-tests.log
 ```
 
-It writes screen captures and a result file to `Validation/`. Virtual-device checks do not replace a final check with a physically connected controller or your course's specific in-class setup. Review the rubric and disclose AI assistance according to your class policy.
+It writes screen captures and a result file to `Validation/`. Virtual-device checks do not replace a final check with a physically connected controller or your course's specific in-class setup.

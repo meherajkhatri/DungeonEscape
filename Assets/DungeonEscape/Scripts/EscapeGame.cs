@@ -89,7 +89,7 @@ namespace DungeonEscape
             Label(page.transform, "Controls & objective", 43, pale, 50, -95, 730, 70, FontStyle.Bold);
             Label(page.transform, "Collect all 3 golden runes, then step into the eastern gate.\nYou have 4 life points. Red sentries and raised spikes hurt.\nBlue spikes are safe; coral flasks restore one life point.", 22, muted, 54, -193, 725, 130);
             Label(page.transform, "MOVE\nDASH\nPAUSE\nMENUS", 19, gold, 54, -366, 150, 180, FontStyle.Bold);
-            Label(page.transform, "WASD / arrow keys   •   Left stick / D-pad\nSpace / Shift   •   A (Xbox) / Cross (PlayStation)\nEsc   •   Menu / Options\nMouse or arrows + Enter   •   D-pad + south button", 19, pale, 214, -366, 560, 180);
+            Label(page.transform, "WASD / arrow keys \nSpace / Shift   \nEscape   \nMouse or arrows + Enter", 19, pale, 214, -366, 560, 180);
             Label(page.transform, "A dash briefly protects you from hazards. It recharges in a second.\nTall arches can hide you from view. Keep moving to emerge.", 19, muted, 54, -578, 720, 80);
             Select(AddButton("Back to main menu", 54, -696, 700, MainMenu, true));
         }
