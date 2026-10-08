@@ -11,12 +11,14 @@ A complete, small top-down Unity game. Recover three golden runes in a guarded v
 
 | Action | Keyboard | Controller |
 | --- | --- | --- |
-| Move | WASD or arrow keys |
-| Dash | Space or left Shift |
-| Pause/resume | Escape |
-| Menu navigation | Mouse, or arrows and Enter |
+| Move | WASD or arrow keys | Left stick or D-pad |
+| Dash | Space or left Shift | A (Xbox) / Cross (PlayStation), or right shoulder button |
+| Pause/resume | Escape | Use the on-screen Pause button; menu navigation also supports the controller D-pad and South button |
+| Menu navigation | Mouse, or arrows and Enter | D-pad and South button |
 
 The dash lasts 0.18 seconds and recharges in 1.1 seconds. During the dash, hazards cannot hurt you. After taking damage, you receive 1.3 seconds of protection. Raised silver spikes are dangerous; lowered blue spikes are safe. Coral flasks restore one life point and remain available if life is full. The eastern gate opens after all three runes are collected.
+
+From the pause screen, choose **Resume**, **Restart run**, or **Main menu**. Victory and defeat screens provide **Play again/Try again** and **Main menu** options. The How to Play and Credits screens both provide **Back to main menu**.
 
 ## Assignment evidence
 
