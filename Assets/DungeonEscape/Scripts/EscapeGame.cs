@@ -100,7 +100,7 @@ namespace DungeonEscape
             Label(page.transform, "Made by MK", 43, pale, 50, -95, 720, 70, FontStyle.Bold);
             Label(page.transform, "SPECIAL THANKS", 17, gold, 54, -242, 700, 30);
             Label(page.transform, "Thanks to all the artists and developers who contributed to this project.", 19, pale, 54, -282, 720, 64);
-            Label(page.transform, "Character art", 17, muted, 54, -362, 720, 80);
+            Label(page.transform, "CHARACTER ART", 17, gold, 54, -500, 700, 30);
             Label(page.transform, "Animated character — Sogomn (CC0)\nopengameart.org/content/animated-character", 18, pale, 54, -402, 720, 80);
             Label(page.transform, "DUNGEON ART", 17, gold, 54, -500, 700, 30);
             Label(page.transform, "Michele \"Buch\" Bucelli · Sponsored by Abram Connelly\nTop down dungeon tileset · CC BY 3.0\nopengameart.org/content/top-down-dungeon-tileset\nopengameart.org/users/buch\ncreativecommons.org/licenses/by/3.0/", 18, pale, 54, -540, 720, 125);
