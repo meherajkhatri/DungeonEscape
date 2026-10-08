@@ -24,27 +24,31 @@ From the pause screen, choose **Resume**, **Restart run**, or **Main menu**. Vic
 
 | Requirement | Implementation and where to inspect |
 | --- | --- |
-| Sprite sheet | `Art/Imported/guy.png`: 16 character frames; `Art/Imported/sheet.png`: dungeon tiles and arches. `Art/DungeonAtlas.png` supplies supplemental gameplay icons. |
+- Sprite sheet:- `Art/Imported/guy.png`: 16 character frames; `Art/Imported/sheet.png`: dungeon tiles and arches. `Art/DungeonAtlas.png` supplies supplemental gameplay icons.
 
-| Tilemap, Grid, Tile Palette | Scene object **Dungeon Grid** contains Floor, Walls, and Foreground tilemaps. Select `Assets/DungeonEscape/Tiles/DungeonPalette.prefab` in the Tile Palette window. Its Tile assets are the same assets used to construct the map; the environment remains editable with Unity's painting tools. |
+- Tilemap, Grid, Tile Palette:-
+ Scene object **Dungeon Grid** contains Floor, Walls, and Foreground tilemaps. Select `Assets/DungeonEscape/Tiles/DungeonPalette.prefab` in the Tile Palette window. Its Tile assets are the same assets used to construct the map; the environment remains editable with Unity's painting tools.
 
-| Foreground layering | Four arches in the openings between chambers render at sorting order 30, above the explorer at 10. Walk through the passages to pass behind their lintels. |
+- Foreground layering:- Four arches in the openings between chambers render at sorting order 30, above the explorer at 10. Walk through the passages to pass behind their lintels.
 
-| Unity Input System | `Input/DungeonControls.inputactions`, referenced by `Explorer.cs`, supports keyboard and standard gamepads. Canvas navigation uses `InputSystemUIInputModule`. |
+- Unity Input System:- `Input/DungeonControls.inputactions`, referenced by `Explorer.cs`, supports keyboard and standard gamepads. Canvas navigation uses `InputSystemUIInputModule`.
 
-| 2D colliders | Explorer CapsuleCollider2D, wall TilemapCollider2D, and circular trigger colliders on interactable objects. |
+- 2D colliders:- Explorer CapsuleCollider2D, wall TilemapCollider2D, and circular trigger colliders on interactable objects.
 
-| Meaningful triggers | Rune collection, gate completion, spike/sentry damage, and healing flasks all use OnTriggerEnter2D/OnTriggerStay2D. |
+- Meaningful triggers:- Rune collection, gate completion, spike/sentry damage, and healing flasks all use OnTriggerEnter2D/OnTriggerStay2D.
 
-| Rigidbody2D physics | Dynamic explorer, zero gravity, frozen rotation, continuous collision detection, velocity applied in FixedUpdate. Sentries use kinematic Rigidbody2D.MovePosition patrols. |
+- Rigidbody2D physics:- Dynamic explorer, zero gravity, frozen rotation, continuous collision detection, velocity applied in FixedUpdate. Sentries use kinematic Rigidbody2D.MovePosition patrols.
 
-| Canvas UI | Runtime Canvas menus: main menu, How to Play, Credits, Pause, Victory, and Defeat. Every secondary screen offers a route to the main menu. HUD shows life, rune count, time, dash recharge, and contextual feedback. |
+- Canvas UI:- Runtime Canvas menus: main menu, How to Play, Credits, Pause, Victory, and Defeat. Every secondary screen offers a route to the main menu. HUD shows life, rune count, time, dash recharge, and contextual feedback.
 
-| Player animations | `Animation/Explorer.controller` transitions between Idle, Walk, and Dash using Speed and Dashing parameters. Directional blend trees animate SpriteRenderer.sprite from guy.png. |
+- Player animations:- `Animation/Explorer.controller` transitions between Idle, Walk, and Dash using Speed and Dashing parameters. Directional blend trees animate SpriteRenderer.sprite from guy.png.
 
-| Complete game loop | Main menu → collect runes while surviving → unlock gate → victory. Losing all life produces defeat. Both outcomes support replay and return to menu. |
+- Complete game loop:-
+ Main menu → collect runes while surviving → unlock gate → victory.
+ Losing all life produces defeat.
+ Both outcomes support replay and return to menu.
 
-| Polish | Consistent palette, credited pixel art, synthesized sound effects, collectible particles, hit blinking, animated sentries, bobbing pickups, torch flicker, best time, pause, and clear feedback. |
+- Polish:- Consistent palette, credited pixel art, synthesized sound effects, collectible particles, hit blinking, animated sentries, bobbing pickups, torch flicker, best time, pause, and clear feedback.
 
 ## Credits
 
