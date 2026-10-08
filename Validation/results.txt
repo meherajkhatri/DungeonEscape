@@ -1,0 +1,36 @@
+Unity 6000.5.9f1 — updated art and UI validation
+
+PASS: Reachable: Rune I • west reliquary
+PASS: Reachable: Rune III • east reliquary
+PASS: Reachable: Eastern gate • requires three runes
+PASS: Reachable: Rune II • lower vault
+PASS: Editable Tile Palette exists
+PASS: Main menu initializes
+PASS: Instructions navigation
+PASS: Credits navigation
+PASS: Start button resets run
+PASS: Keyboard physics movement
+PASS: Controller analog movement
+PASS: Escape pauses
+PASS: Physics stays still while paused
+PASS: Escape resumes
+PASS: Controller dash
+PASS: Tilemap walls stop Rigidbody2D
+PASS: Gate stays locked without runes
+PASS: Rune collected by trigger
+PASS: Second rune collected
+PASS: All runes recovered
+PASS: Exit trigger produces victory
+PASS: HUD pause cannot reopen a finished run
+PASS: Restart restores all collectibles
+PASS: Spike trigger damages explorer
+PASS: Flask restores health
+PASS: Damage immunity prevents duplicate hit
+PASS: Zero life produces defeat
+PASS: Return from defeat restores time scale
+PASS: No runtime errors
+DUNGEON_VALIDATION_OK: 29 checks passed
+
+Controller input tested using a virtual Gamepad device; physical hardware not tested.
+
+Standalone macOS build: succeeded with updated art, menu theme, and credits.
