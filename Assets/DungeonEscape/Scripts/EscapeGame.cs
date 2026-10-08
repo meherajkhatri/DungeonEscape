@@ -100,6 +100,8 @@ namespace DungeonEscape
             Label(page.transform, "Made by MK", 43, pale, 50, -95, 720, 70, FontStyle.Bold);
             Label(page.transform, "SPECIAL THANKS", 17, gold, 54, -242, 700, 30);
             Label(page.transform, "Thanks to all the artists and developers who contributed to this project.", 19, pale, 54, -282, 720, 64);
+            Label(page.transform, "Character art", 17, muted, 54, -362, 720, 80);
+            Label(page.transform, "Explorer and sentries by Kenney · CC0 1.0\nkenney.nl/assets/topdown-shooter", 18, pale, 54, -402, 720, 80);
             Label(page.transform, "DUNGEON ART", 17, gold, 54, -366, 700, 30);
             Label(page.transform, "Michele \"Buch\" Bucelli · Sponsored by Abram Connelly\nTop down dungeon tileset · CC BY 3.0\nopengameart.org/content/top-down-dungeon-tileset\nopengameart.org/users/buch\ncreativecommons.org/licenses/by/3.0/", 18, pale, 54, -406, 720, 148);
             Label(page.transform, "Sheets sliced for Unity; tiles scaled and floor tinted for readability.\nAdditional game icons and synthesized sound made for this project.\nUnity 6 · Input System · Tilemap · Unity UI", 17, muted, 54, -575, 720, 90);
